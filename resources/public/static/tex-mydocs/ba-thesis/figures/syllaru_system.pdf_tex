@@ -1,0 +1,109 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'syllaru_system.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{554.83497925bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.06130655)%
+    \put(0,0){\includegraphics[width=\unitlength]{syllaru_system.pdf}}%
+    \put(0.48288432,0.65312085){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{'}}}%
+    \put(0.34103137,1.01002129){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{из коллекции}}}%
+    \put(0.10745487,1.01083445){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Ausgangstext}}}%
+    \put(0.02532003,0.8537884){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Verbinden von Klitika}}}%
+    \put(0.15141325,0.64965883){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Grapheme}}}%
+    \put(0.1651251,0.57377262){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Pysampa}}}%
+    \put(0.17370451,0.50249492){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Clusters }}}%
+    \put(0.11400349,0.24088199){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Offene Silben}}}%
+    \put(0.07078912,-0.00012805){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Syllabifizierung}}}}%
+    \put(0.35112446,0.93894835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{из колекции}}}%
+    \put(0.35112446,0.85580125){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{из колекции}}}%
+    \put(0.37131064,0.76370386){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{изколекции}}}%
+    \put(0.46472634,0.76414753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{'}}}%
+    \put(0.45533768,0.85645063){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{'}}}%
+    \put(0.47081983,0.93986587){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{'}}}%
+    \put(0.47081983,1.01101501){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{'}}}%
+    \put(0.47707909,0.5714067){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.47941614,0.24153851){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.23170603,0.13108786){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S1}}}%
+    \put(0.52388249,0.10805595){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S2}}}%
+    \put(0.64918834,0.23630935){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{= S3}}}%
+    \put(0.79360188,0.04857247){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S4}}}%
+    \put(0.87114482,0.20276986){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S5}}}%
+    \put(0.35112446,0.65051723){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{изколекции}}}%
+    \put(0.3568159,0.56582403){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{isk6Lek21i}}}%
+    \put(0.36110077,0.23595584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{isk6Leк21i}}}%
+    \put(0.35246204,0.49756876){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{i sk 6 L *e k2 1 i}}}%
+    \put(-0.00091243,0.93953974){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Orfoepische Bearbeitung}}}%
+    \put(0.06345214,0.76169101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Phonetisches Wort}}}%
+    \put(0.36906951,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c2oo}}}%
+    \put(0.53561942,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c2oo}}}%
+    \put(0.44702242,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c1n}}}%
+    \put(0.17696918,0.45692829){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Typ-Tags}}}%
+    \put(0.35176707,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v}}}%
+    \put(0.42674432,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v}}}%
+    \put(0.50172157,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v}}}%
+    \put(0.58823378,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v}}}%
+    \put(0.61707118,0.45666265){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v}}}%
+    \put(0.35314976,0.41861885){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{if Nur v und c1 Tags then 
+     S3
+else:
+     Berechne S1-S5
+
+}}}%
+    \put(0.23118025,0.08818395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.11286484,0.08260128){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{i  sk6  Leк  21  i}}}%
+    \put(0.52172773,0.06897154){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.40341232,0.06338887){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{i  sk6  Le  к21  i}}}%
+    \put(0.76467225,0.01032296){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.64635679,0.00474029){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{i  sk6  Leк  21  i}}}%
+    \put(0.8540682,0.16027746){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{*}}}%
+    \put(0.73575274,0.15469479){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{is  k6  Leк  21  i}}}%
+    \put(0.12545959,0.37715377){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tag-Analyse}}}%
+    \put(0.68965831,0.47052952){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{v-Vokal; n-Sonor; o-Obstruent
+c-Konsonant; 2-# der c}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,36 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[a4paper]{scrartcl}
+%\usepackage[]{graphicx}
+%\usepackage{booktabs} 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{bibgerm} 
+\usepackage{natbib}
+%\usepackage{microtype} 
+\usepackage[onehalfspacing]{setspace}
+\usepackage[a4paper]{geometry}
+\geometry{left=4.5cm,right=2cm,top=2cm, bottom=2cm}
+\newcommand\autocite[1]{\cite[]{#1}}
+
+ 
+\begin{document}
+\section*{Vergleich der Silbensysteme des Russischen mit Hilfe eines Natural Language Processing-Ansatzes}
+
+Meine Arbeit wird sich mit Silbensystemen des Russischen beschäftigen. Dabei soll ein qualitativer Ansatz mit einem quantitativen verbunden werden. Es soll der komplette Kreislauf eines Programms beschrieben werden: Theorie, Umsetzung, Test, Resultate. Die technische Umsetzung soll grö\ss eren Anteil an der Arbeit bekommen als die Analyse. Dies ist dem geschuldet, dass der technische Teil auch mehr Zeit (ca. 5 Wochen) in Anspruch nehmen wird.  \citep{bird2009}
+   
+\textbf{Beginnend} mit der Rolle der Silbe in der Sprache nach \citet{cholin2011}, sollen im ersten Kapitel die bisherigen Ansätze zur Segmentierung von Wörtern in Silben beschrieben werden. Hauptsächlich gibt es für das Russische drei Ansätze \cite{scherba1983} \& \cite{vino1953}, \cite{kasatkin2001} und \cite{bondarko1998}. Die größten Unterschiede liegen in der Aufteilung von Konsonantenclustern zwischen Vokalen. Dabei gibt es noch andere Ansätze wie \cite{deterding2001} und experimentelle Daten von \cite{cote2011}, die eher den Systemen der russischen Wissenschaftler widersprechen.
+
+Trotz der reichen theoretischen Grundlage wurde aber noch nicht untersucht, wie sich die unterschiedlichen Ansätze in einem Corpus unterscheiden. Während es in anderen Sprachen relativ gute Ansätze \cite{padro2012} \& \cite{iaco2011} gibt, um quantitative Aspekte der Silbenphonologie zu berücksichtigen, mangelt es im Russischen daran. Auch der Russische National-Korpus wurde bisher nur graphemisch untersucht. Für die vorliegende Arbeit wird ein 1-Million Ausschnitt des Russischen National-Korpus\footnote{www.ruscorpora.ru} verwendet.
+
+Innerhalb der Implementierung (\textbf{Kap. 2}) sollen die algorhythmischen Ansätze \cite{oakes1998} \& \autocite{jurafsky2008} zu einer Umsetzung des Programms besprochen werden, u.a. soll auch die Bedeutung eines solchen Programms im Englischen gezeigt werden anhand von SounDex \citep{bird2009}. Als nächstes sollen die Werkzeuge vorgestellt werden, mit denen der Korpus analysiert werden soll. Der Silbenkorpus wird wohl aus ca. 2-3 Millionen Silben bestehen und es ist daher auch angemessen über die Code-Profiling Prozeduren \cite{mckinney2012} zu sprechen, die eine relativ schnelle Bearbeitung ermöglichen könnten. Dies ist umso wichtiger, da das Programm Open-Source geführt werden soll\footnote{Als Entwicklungsplattform soll die Versionkontrolle Git mit der Repository https://github.com/ verwendet werden.} und von anderen weiterentwickelt werden kann\footnote{Als Lizenzvertrag habe ich die MIT-Licence oder die Creative Commons 3.0 im Blick.}.
+
+In \textbf{Kapitel 3 und 4} sollen die Resultate des Silbenparsers gegenüberstellt und mit Hilfe von quantitativen Korpus-Ansätzen gezeigt werden, wie sich die Silben in den unterschiedlichen Ansätzen clustern \cite{lebart1998} und wie weit die Unterschiede zwischen den Systemen signifikant sind \cite{baayen2001}.
+ 
+Als Ausblick (\textbf{Kap. 5}) sollen die Möglichkeiten der Verwendung des Programm besprochen werden. 
+    
+\bibliographystyle{agsm}
+\bibliography{../syll_lit}
+
+\end{document}
