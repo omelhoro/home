@@ -233,17 +233,17 @@ projectsProf = [
         techs: "AngularJS, Ionic, Gulp"
     },
     {
-        desc: "Programmierung einer Scan-Erfassungsform für APL Logistics",
+        desc: "Programmierung einer Scan-Erfassungsform für APL Logistics (bei Eversolve)",
         techs: "NodeJS, MongoDB, Durandal"
     }, {
-        desc: "Webplattform für Aktivierung und Wartung von remote RaspPis für Green Technology Solutions",
+        desc: "Webplattform für Aktivierung und Wartung von remote RaspPis für Green Technology Solutions (bei Eversolve)",
         techs: "Bash, NodeJS, Protractor, Durandal"
     }, {
         link: "http://careiwo.herokuapp.com",
-        desc: "Wohnmobile-Suchseite für Sales Verlag",
+        desc: "Wohnmobile-Suchseite für Sales Verlag (bei Eversolve)",
         techs: "ES6, Grunt, Sails.js, Jade"
     }, {
-        desc: "CPOS-Fabrikmanagement-System (verbindet ERP, OPC und IT) für Clean Value Plastics",
+        desc: "CPOS-Fabrikmanagement-System (verbindet ERP, OPC und IT) für Clean Value Plastics (bei Eversolve, work in progress)",
         techs: "NodeJS, Sails.js, Angular"
     },
 ];
