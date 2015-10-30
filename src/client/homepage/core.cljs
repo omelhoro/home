@@ -173,7 +173,7 @@
        ]
       ]
      [:p [:h4 "Professionaly:"]
-      "In my job at " [:a {:href "https://eversolve.io"} "Eversolve "]
+      "In my job at " [:a {:href "http://eversolve.io"} "Eversolve "]
       "I'm using JavaScript everywhere: MEAN, some MeteorJS, ReactJS. Everything packed in nice Docker-Containers :D"
       [:p "Some of our customers include:"]
       [:ul
@@ -225,7 +225,7 @@
      [:p.summary
       "I'm a former BA-student of Russian Linguistics and History at the University of Hamburg. I enjoy combining humanities with digital technologies - "
       [:strong "Digital Humanities. "]
-      "Now I'm working at " [:a {:href "https://eversolve.io"} "Eversolve "] "."
+      "Now I'm working at " [:a {:href "http://eversolve.io"} "Eversolve "] "."
       ]
      ]
     ]
