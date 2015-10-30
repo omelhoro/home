@@ -13,7 +13,7 @@
   [:div [(session/get :current-page)]])
 
 (defn degrees-certificates []
-  [:div [:h2 "Degree & Academic"]
+  [:div [:h3 "Degree & Academic"]
    [:div {:class "row"}
     [:div {:class "col-lg-3"}
      [:a {:href "http://www.sachsenwaldschule.org/"}
@@ -24,7 +24,7 @@
     [:div {:class "col-lg-3 img-responsive"}
      [:a {:href "http://www.spbu.ru"}
       [:img {:class "img-responsive", :src "/static/media/spbgu.jpeg", :alt "Saint Petersburg State University"}]]]]
-   [:h2 "Worked & Working"]
+   [:h3 "Worked & Working"]
    [:div {:class "row"}
     [:div {:class "col-lg-3"}
      [:a {:href "http://www.lima.uni-hamburg.de/index.php/en"}
@@ -41,7 +41,7 @@
   )
 
 (defn work-samples []
-  [:div [:h3 "Work Samples\n  "
+  [:div [:h3 "Work Samples"
          [:small "Combining Inkscape, Gimp, Python and R"]]
    [:div {:class "row"}
     [:div {:class "col-lg-6"}
@@ -60,7 +60,10 @@
        [:img {:src "/static/media/pics/poster_txtdev_small.png", :alt "Lima conference", :width "300"}]]]]]])
 
 (defn seminar-papers []
-  [:div [:p "Take a look at my BA-Thesis:"]
+  [:div
+   [:h3 "University"]
+
+   [:p "Take a look at my BA-Thesis:"]
    [:p
     [:a {:href "/static/tex-mydocs/ba-thesis/ba-thesis.pdf"} "Vergleich der Silbenmodelle des Russischen mit Hilfe eines Natural Language Processing-Ansatzes"]]
    [:p {:class "alert alert-warning"} "Although the description and the results are valid, the technical side is not. Recently I rewrote this app in Clojure with cljx-sources to work in web and desktop, also\n  "
@@ -151,76 +154,47 @@
 
 (defn programming []
 
-  [:div [:h3 "Programming languages:"]
-   [:p
-    [:h4 "Personal:"]
-    "My private projects are mostly in Scala with Akka-HTTP (Backend) & Phoenix (Elixir) and ClojureScript (Frontend). This site is made so :)"
-    "Here is a list of some personal projects:"
-    [:ul
-     [:li "phonological, like " [:a {:href "https://russyll.fischerops.com"} "syllable dividing"] " and " [:a {:href "https://russtress.fischerops.com"} "automatic stress setting"]]
-     [:li "phonetic" [:a {:href "/#workviz"} " rhythm and intonation"]]
-     [:li "morphological, tagging and lemmatizing"]
-     [:li "pedagogical" [:a {:href "https://langapps.fischerops.com"} " enhancement of a language course with games"]]
-     [:li "visualization of " [:a {:href "https://data.fischerops.com"} "linguistic data"]]
-     [:li "semantic:" [:a {:href "https://data.fischerops.com/#/kosovotopic"} " tagging/clustering of emotions of Russian politicians"]]
+  [:div [:h3 "Coding"]
+   [:div.row
+    [:div.col-lg-9
+     [:p
+      [:h4 "Personal:"]
+      "My private projects are mostly in ClojureScript (Reagent & Express). This site is made so :)"
+      "That's the " [:a {:href "https://github.com/omelhoro/reagent-template"} "custom template"] "."
+      [:br]
+      "Here is a list of some personal projects:"
+      [:ul
+       [:li "phonological, like " [:a {:href "https://russyll.fischerops.com"} "syllable dividing"] " and " [:a {:href "https://russtress.fischerops.com"} "automatic stress setting"]]
+       [:li "phonetic" [:a {:href "/#workviz"} " rhythm and intonation"]]
+       [:li "morphological, tagging and lemmatizing"]
+       [:li "pedagogical" [:a {:href "https://langapps.fischerops.com"} " enhancement of a language course with games"]]
+       [:li "visualization of " [:a {:href "https://data.fischerops.com"} "linguistic data"]]
+       [:li "semantic:" [:a {:href "https://data.fischerops.com/#/kosovotopic"} " tagging/clustering of emotions of Russian politicians"]]
+       ]
+      ]
+     [:p [:h4 "Professionaly:"]
+      "In my job at " [:a {:href "https://eversolve.io"} "Eversolve "]
+      "I'm using JavaScript everywhere: MEAN, some MeteorJS, ReactJS. Everything packed in nice Docker-Containers :D"
+      [:p "Some of our customers include:"]
+      [:ul
+       [:li [:a {:href "https://www.apllogistics.com"} "Espit & APLL"]]
+       [:li [:a {:href "http://www.gts-web.de/"} "Green Technology Solutions"]]
+       [:li [:a {:href "http://sales-verlag.de/"} "Sales-Verlag"]]
+       [:li [:a {:href "http://www.ecophoenixx.de"} "FVH-Ecophoenixx"]]
+       ]
+      ]
      ]
+    [:div.col-lg-3 [:img.photoofme {:src "/static/media/igorfischer1.jpg" :alt "Igor Fischer in Reinbek"}]]
+
     ]
-   [:p [:h4 "Professionaly:"]
-    "In my job at " [:a {:href "https://eversolve.io"} "Eversolve "]
-    "I'm using JavaScript everywhere: MEAN, some MeteorJS, ReactJS."
-    [:p "Some of our customers include:"]
-    [:ul
-     [:li [:a {:href "https://www.apllogistics.com"} "Espit & APLL"]]
-     [:li [:a {:href "http://www.gts-web.de/"} "Green Technology Solutions"]]
-     [:li [:a {:href "http://sales-verlag.de/"} "Sales-Verlag"]]
-     [:li [:a {:href "http://www.ecophoenixx.de"} "FVH-Ecophoenixx"]]
-     ]
-    ]]
+   ]
   )
-
-; Igor Fischer
-; Experte für Mobile & Cloud (MBaaS)
-;
-; Kompetenzen: Cross-Plattform-Entwicklung (iOS, Android, WP, Mac, Linux, Windows) & SPAs
-; Sprachen: Swift, {eine Sprache für Android: Java | Kotlin | Scala}, C#, TypeScript
-; DB: MongoDB, Neo4J, (optional: PostgresQL)
-;
-; Native-Frameworks (Cross-Plattform):
-; Xamarin (25$/Monat)
-; Appcelerator (39$/Monat; aber kostenlose Evaluierung ohne Deployment)
-; React-Native (kostenlos)
-;
-; JS-Frameworks:
-; Mobile: Cordova
-; Backend: LoopBack, Sails, MeteorJS
-; Frontend: Angular, React, PouchDB
-;
-; Zertifikate:
-; Xamarin University
-; https://xamarin.com/university
-; 2000$ für Kurs (WP, iOS, Android mit C#) +
-; Kosten Framework: Mo fragen, ob er eine kostenlose Xamarin Lizenz besorgen kann, ansonsten 25$/Monat
-; StrongLoop NodeJS - Certificate
-; https://strongloop.com/node-js/certification/
-; 140$ (nur Examen, kein Kurs)
-; MongoDB  - Certificate
-; https://university.mongodb.com/
-; 150$ (Examenskosten, Vorbereitungskurs ist kostenlos)
-; Udacity - Nanodegrees:
-; iOS (Swift)
-; https://www.udacity.com/course/ios-developer-nanodegree--nd003
-; 200$/Monat (6 Monate); Hälfte zurück, wenn Examen innerhalb (von 12 Monaten) abgelegt
-; Android (Java)
-; https://www.udacity.com/course/android-developer-nanodegree--nd801
-; 200$/Monat (6 Monate); Hälfte zurück, wenn Examen innerhalb (von 12 Monaten) abgelegt
-; (optional: AWS Certificate)
-
 
 
 (defn year-2016 []
   [:div
-   [:h2 "I've also made a plan what's my profile is going to be in middle 2016"]
-   [:h4 "That are the things I want to know:"]
+   [:h4 "I've also made a plan what my profile is going to be in middle 2016"]
+   [:h4 "That are the things I want to know really well:"]
    [:ul
     [:li "Abilities: Cross-Plattform-Development (iOS, Android, WP, Mac, Linux, Windows) & SPAs"]
     [:li "Languages: Swift, {one language for Android: Java | Kotlin | Scala}, C#, TypeScript"]
@@ -241,11 +215,19 @@
    ]
   )
 
+(enable-console-print!)
+
+
 (defn about-page []
   [:div [:h2 "Coder, Linguist, Eversolver"]
-   [:p.summary [:img.pull-right.photoofme {:src "/static/media/igorfischer.jpg" :alt "Igor Fischer in Reinbek"}]
-    "I'm a former BA-student of Russian Linguistics and History at the University of Hamburg. I enjoy combining humanities with digital technologies - "
-    [:strong "Digital Humanities. "]
+   [:div.row
+    [:div.col-xs-8
+     [:p.summary
+      "I'm a former BA-student of Russian Linguistics and History at the University of Hamburg. I enjoy combining humanities with digital technologies - "
+      [:strong "Digital Humanities. "]
+      "Now I'm working at " [:a {:href "https://eversolve.io"} "Eversolve "] "."
+      ]
+     ]
     ]
    ])
 
@@ -263,12 +245,156 @@
   )
 
 
+(def bio-data (js->clj js/data))
+
+(print (keys bio-data))
+(print (get bio-data "profile"))
+(print (:technology bio-data))
+
+(defn cv-main []
+  [:style ".label {margin: 5px;}"]
+  [:div {:id "vita"}
+   [:section
+    [:div {:class "row"}
+     [:div {:class "col-xs-8 text-center"}
+      [:h1 {:id "person-name", :class "text-capitalize" :style {:color "black"}} "Igor Fischer"]
+      [:ul {:class "list-inline"}
+       [:li "01573 6694292"]
+       [:li [:a {:href "mailto:ich@ifischer.hamburg"} "ich@ifischer.hamburg"]]]
+      [:ul {:class "list-inline"}
+       [:li "Kirschenweg 38G\n                 "]
+       [:li "21465 Reinbek\n                 "]]
+      [:ul {:class "list-inline"}
+       [:li
+        [:a {:href "https://home.fischerops.com"} "https://home.fischerops.com"]]
+       [:li
+        [:a {:href "https://github.com/omelhoro"} "https://github.com/omelhoro"]]]]
+     [:div {:class "col-xs-4 text-center"}
+      [:img {:id "my_pic", :src "/static/media/igorfischer.jpg", :alt ""}]]]]
+   [:section {:id "profile"}
+    [:h3 "Profil"]
+    [:div {:class "row"}
+     (for [prof (get-in bio-data ["profile" "data"])] [:div.col-xs-4 [:h4 {:style {:background "inherit"}} (prof "title")] (prof "text")])
+     ""]]
+
+   [:section {:id "projects"}
+    [:h3 (get-in bio-data ["projectsProf" "name"])]
+    [:ul
+     (for [prj (get-in bio-data ["projectsProf" "data"])]
+
+       [:li
+        [(if (-> (prj "link") nil?) :span :a) {:href (prj "link")} (prj "desc")] [:small.label.label-info (prj "techs")]])
+     ]]
+
+   [:section {:id "projects"}
+    [:h3 (get-in bio-data ["projectsPrivate" "name"])]
+    [:ul
+     (for [prj (get-in bio-data ["projectsPrivate" "data"])] [:li [:a {:href (prj "link")} (prj "desc")] [:div.label.label-info (prj "techs")]])
+     ]]
+
+   [:section {:id "personals"}
+    [:h3 "Persönliches"] ""
+    [:table {:class "table borderless"}
+     [:tbody
+      (for [pers (get-in bio-data ["personals" "data"])] [:tr [:td (pers "cat")] [:td {:style {:vertical-align "bottom"}} (pers "item")]])
+      ]
+     ]
+    ]
+   [:section {:id "education"}
+    [:h3 "Bildung"]
+    (for [degr (get-in bio-data ["education" "data"])]
+      [:div [:h4 (degr "ed_name") [:span.time (degr "timerange")]]
+       [:ul (for [ed_info (degr "add_info")] [:li ed_info])]]
+      )
+    ]
+   [:section {:id "working"}
+    [:h3 {:class "section"} "Arbeitsleben"]
+
+    (for [job (get-in bio-data ["working" "data"])]
+      [:div
+       [:h4 (job "name")
+        [:small (job "job")
+         [:span.place (job "location")]]
+        [:span.time (job "timerange")]]
+
+       [:h5 (job "subtitle")]
+       [:ul
+        (for [add_info (job "add_info")] [:li add_info])
+        (if
+          (-> (job "attachs") empty?)
+          ""
+          [:li (for [attach (job "attachs")]
+                 [:a {:href (attach "link")} (attach "title")]
+                 )
+           ]
+          )
+        ]
+       ]
+
+      )
+    ]
+
+   ;[:section {:id "technology"}
+   ; [:h3 "Technologien"]
+   ; [:table {:class "table"}
+   ;  [:tbody
+   ;   [:tr
+   ;    [:td {:class "category"} "{{category}}"]
+   ;    [:td
+   ;     [:ul {:class "item-horizontal"} "\n                    {{#each items}}\n                    "
+   ;      [:li "{{{this}}}"] "\n                    {{/each}}\n                "] "\n\n                {{#if subcats}}\n                \n                    {{#each subcats}}\n                    \n                    {{/each}}\n                "
+   ;     [:table {:class "table borderless subtab"}
+   ;      [:tbody
+   ;       [:tr
+   ;        [:td "{{category}}"]
+   ;        [:td
+   ;         [:ul {:class "item-horizontal subcat"} "\n                                {{#each items}}\n                                "
+   ;          [:li "{{this}}"] "\n                                {{/each}}\n                            "]]]]] "\n                {{/if}}\n            "]]]]]
+
+   [:section {:id "language"}
+    [:h3 "Sprachen"]
+    [:table {:class "table borderless"}
+     [:tbody
+      (for [lang (get-in bio-data ["language" "data"])] [:tr [:td (lang "name")] [:td (lang "level")]])
+      ]
+     ]
+    ]
+   [:section {:id "misc"}
+    [:h3 "Verschiedenes"]
+    [:ul
+
+     (for [misc (get-in bio-data ["misc" "data"])]
+       [:li (misc "topic") [:span.place (misc "location")] [:small [:span.time (misc "time")]]]
+       )
+     ]
+    ]
+
+   [:section {:id "hobby"}
+    [:h3 "Freizeit"]
+    [:ul {:class "item-horizontal"}
+     (for [hobby (get-in bio-data ["hobby" "data"])] [:li hobby])
+     ]
+
+    ]]
+  )
+
+(defn cv []
+  [:div
+   (cv-main)
+   ]
+
+  )
+
+
 ;; -------------------------
 ;; Routes
 (secretary/set-config! :prefix "#")
 
 (secretary/defroute "/" []
                     (session/put! :current-page #'home-page))
+
+(secretary/defroute "/cv" []
+                    (session/put! :current-page #'cv))
 
 ;; -------------------------
 ;; History
