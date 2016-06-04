@@ -1,0 +1,19 @@
+version: '2'
+services:
+  home:
+    image: omelhoro1/homepage
+    container_name: home
+    restart: unless-stopped
+    # ports:
+    #   - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=home.igor-fischer.rocks
+      - LETSENCRYPT_HOST=home.igor-fischer.rocks
+      - VIRTUAL_NETWORK=proxy-tier
+      - VIRTUAL_PORT=5000
+      - LETSENCRYPT_EMAIL=fischerig@outlook.com
+    networks:
+      - proxy-tier
+networks:
+  proxy-tier:
+    external: true
