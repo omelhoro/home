@@ -6,12 +6,8 @@ services:
     restart: unless-stopped
     # ports:
     #   - "3000:3000"
-    environment:
-      - VIRTUAL_HOST=home.igor-fischer.rocks,home.fischerops.com
-      - LETSENCRYPT_HOST=home.igor-fischer.rocks,home.fischerops.com
-      - VIRTUAL_NETWORK=proxy-tier
-      - VIRTUAL_PORT=5000
-      - LETSENCRYPT_EMAIL=fischerig@outlook.com
+    labels:
+      - "traefik.frontend.rule=Host:home.igor-fischer.rocks,home.fischerops.com"
     networks:
       - proxy-tier
 networks:
