@@ -1,10 +1,5 @@
 pipeline:
 
-  # build:
-  #   image: node
-  #   commands:
-  #     - echo 1
-
   docker:
     image: plugins/docker
     storage_driver: vfs
@@ -16,7 +11,7 @@ pipeline:
   deploy:
     image: drillster/drone-rsync
     user: captain
-    hosts: [ "igor-fischer.rocks" ]
+    hosts: [ "software-unchained.com" ]
     port: 22
     target: /tmp/homepage-cdn-${DRONE_COMMIT}/
     include:
