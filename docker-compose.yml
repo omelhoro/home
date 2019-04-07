@@ -1,13 +1,11 @@
-version: '2'
+version: "2"
 services:
   home:
     image: omelhoro1/homepage
     container_name: home-cdn
     restart: unless-stopped
-    # ports:
-    #   - "3000:3000"
     labels:
-      - "traefik.frontend.rule=Host:home-cdn.igor-fischer.rocks,home-cdn.fischerops.com"
+      - "traefik.frontend.rule=Host:home-cdn.fischerops.com"
     networks:
       - proxy-tier
 networks:
