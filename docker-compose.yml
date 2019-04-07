@@ -5,7 +5,8 @@ services:
     container_name: home-cdn
     restart: unless-stopped
     labels:
-      - "traefik.frontend.rule=Host:home-cdn.fischerops.com"
+      - traefik.frontend.rule=Host:home-cdn.fischerops.com
+      - traefik.enable=true
     networks:
       - proxy-tier
 networks:
