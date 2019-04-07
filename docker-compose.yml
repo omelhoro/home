@@ -9,6 +9,7 @@ services:
       - traefik.enable=true
     networks:
       - proxy-tier
+
 networks:
   proxy-tier:
     external: true
