@@ -16,3 +16,4 @@ pom.xml.asc
 .idea
 *.iml
 node_modules/
+.DS_Store
